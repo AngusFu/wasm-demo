@@ -1,0 +1,13 @@
+{
+  "entryFile": "./src/module.ts",
+  "outFile": "./assets/module.wasm",
+  "textFile": "./assets/module.wat",
+  "target": "wasm32",
+  "memoryModel": "bare",
+  "optimize": true,
+  "quiet": false,
+  "validate": false,
+  "noTreeShaking": false,
+  "noImplicitConversion": true,
+  "noRuntime": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "wasm-demo",
+  "version": "1.0.0",
+  "description": "wasm assemblyscript demo",
+  "main": "index.js",
+  "author": "<wemlion>angusfu1126@qq.com",
+  "license": "MIT",
+  "devDependencies": {
+    "assemblyscript": "github:dcodeIO/AssemblyScript",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.0.2",
+    "npm-watch": "^0.2.0"
+  },
+  "scripts": {
+    "serve": "live-server --watch=./assets,./src --wait=300",
+    "compile": "./node_modules/.bin/asc -c asconfig.json",
+    "watch": "npm-watch",
+    "build": "npm run compile",
+    "start": "run-p watch serve"
+  },
+  "watch": {
+    "compile": "src/module.ts"
+  }
+}
